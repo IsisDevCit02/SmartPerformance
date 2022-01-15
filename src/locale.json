@@ -1,0 +1,18 @@
+{
+    "Home": {
+        "Titles": {
+            "BEM_VINDO": "Bem-Vindo"
+        },
+        "Label": {
+            
+        },
+        "Button": {}
+    },
+    "Cliente": {
+        "Titles": {
+            "ROTINA_PEDIDO": "Rotina de Pedido"
+        },
+        "Label": {},
+        "Button": {}
+    }
+}
