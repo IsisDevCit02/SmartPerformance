@@ -1,18 +1,34 @@
 {
     "Home": {
-        "Titles": {
-            "BEM_VINDO": "Bem-Vindo"
-        },
         "Label": {
-            
+            "BEM_VINDO": "Bem-Vindo"
         },
         "Button": {}
     },
     "Cliente": {
-        "Titles": {
+        "Label": {
             "ROTINA_PEDIDO": "Rotina de Pedido"
         },
-        "Label": {},
         "Button": {}
+    },
+    "Login": {
+        "Label": {
+            "LOGIN": "Login",
+            "ENTRE_CREDENCIAIS": "Entre com suas credenciais",
+            "ESQUECI_SENHA": "Esqueci a senha",
+            "SUCESSO": "Sucesso",
+            "SENHA_ALTERADA_SUCESSO":"Sua senha foi alterada com sucesso! Você ja pode logar com sua novas credênciais"
+        },
+        "Input": {
+            "DIGITE_EMAIL": "Digite seu email",
+            "DIGITE_LOGIN": "Digite seu Login",
+            "DIGITE_CODIGO": "Digite o código",
+            "DIGITE_NOVA_SENHA": "Digite sua nova senha",
+            "CONFIRME_NOVA_SENHA": "Confirme sua nova senha"
+        },
+        "Button": {
+            "ENTRAR": "Entrar",
+            "ESQUECI_SENHA": "Esqueci a senha"
+        }
     }
 }

@@ -79,7 +79,7 @@ export default function InfoLogin({ navigation }) {
             <FormControl width='85%' alignSelf='center' marginTop='15%'>
               <Input
                 variant="underlined"
-                placeholder='Digite seu email'
+                placeholder={locale.Login.Input.DIGITE_EMAIL}
                 borderBottomColor={colors.colorRed}
                 fontSize={12}
                 padding={4}
@@ -94,7 +94,7 @@ export default function InfoLogin({ navigation }) {
             <FormControl width='85%' alignSelf='center' marginTop='5%'>
               <Input
                 variant="underlined"
-                placeholder='Digite seu email'
+                placeholder={locale.Login.Input.DIGITE_LOGIN}
                 borderBottomColor={colors.colorRed}
                 fontSize={12}
                 padding={4}
@@ -141,6 +141,7 @@ export default function InfoLogin({ navigation }) {
                 width='85%'
                 alignSelf='center'
                 top={5}
+                onPress={() => navigation.navigate('ForgotPassword')}
               >
                 <Text
                   color={colors.colorRed}
