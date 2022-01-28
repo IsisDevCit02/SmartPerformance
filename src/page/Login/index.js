@@ -47,7 +47,7 @@ export default function Login({ navigation }) {
             <Text
               color={colors.white}
               fontSize={18}
-              fontWeight="bold">{locale.Login.Button.ENTRAR}</Text>
+              fontWeight="bold">{locale.Button.ENTRAR}</Text>
           </Button>
         </HStack>
       </Box>

@@ -29,9 +29,9 @@ export default function NewPassword({ navigation }) {
                     source={Images.logoKobber}
                     alt="Alternate Text"
                     resizeMode={"stretch"}
-                    width='25%'
-                    height={50}
-                    marginTop='50%'
+                    width='40%'
+                    height='10%'
+                    marginTop='25%'
                 />
                 <Center flex={1}></Center>
                 <HStack bg={colors.white}
@@ -42,7 +42,7 @@ export default function NewPassword({ navigation }) {
                     borderTopLeftRadius={20}
                     borderRightRadius={20}
                 >
-                    <Box safeArea p="2" bottom='30%' width='100%' >
+                    <Box safeArea p="2" bottom='20%' width='100%' >
                         <Heading
                             fontSize={18}
                             textAlign="center"
@@ -93,7 +93,7 @@ export default function NewPassword({ navigation }) {
                                     color={colors.white}
                                     fontWeight='bold'
                                     fontSize={16}>
-                                    {locale.Login.Button.ENTRAR}
+                                    {locale.Button.CONTINUAR}
                                 </Text>
                             </Button>
                         </View>

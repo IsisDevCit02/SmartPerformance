@@ -29,15 +29,15 @@ export default function ForgotPassword({ navigation }) {
                     source={Images.logoKobber}
                     alt="Alternate Text"
                     resizeMode={"stretch"}
-                    width='25%'
-                    height={50}
-                    marginTop='50%'
+                    width='40%'
+                    height='10%'
+                    marginTop='20%'
                 />
                 <Center flex={1}></Center>
                 <HStack bg={colors.white}
                     alignItems="center"
                     justifyContent="center"
-                    height='40%'
+                    height='50%'
                     width='100%'
                     borderTopLeftRadius={20}
                     borderRightRadius={20}
@@ -46,11 +46,12 @@ export default function ForgotPassword({ navigation }) {
                         <Heading
                             fontSize={18}
                             textAlign="center"
+                            marginBottom='10%'
                             color={colors.colorBlack}
                         >
                             {locale.Login.Label.ESQUECI_SENHA}
                         </Heading>
-                        <FormControl width='85%' alignSelf='center' marginTop='5%'>
+                        <FormControl width='85%' alignSelf='center' >
                             <Input
                                 variant="underlined"
                                 placeholder={locale.Login.Input.DIGITE_LOGIN}
@@ -73,7 +74,7 @@ export default function ForgotPassword({ navigation }) {
                                     color={colors.white}
                                     fontWeight='bold'
                                     fontSize={16}>
-                                    {locale.Login.Button.ENTRAR}
+                                    {locale.Button.CONTINUAR}
                                 </Text>
                             </Button>
                         </View>

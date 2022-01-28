@@ -26,12 +26,12 @@ export default function Success({ navigation }) {
         <NativeBaseProvider >
             <Box flex={1} alignItems="center" justifyContent="center" bg={colors.coberColor}>
                 <Image
-                    source={Images.logoSmartKobber}
+                    source={Images.logoKobber}
                     alt="Alternate Text"
                     resizeMode={"stretch"}
-                    width='70%'
-                    height='30%'
-                    top='2%'
+                    width='40%'
+                    height='10%'
+                    marginTop='15%'
                 />
                 <Center flex={1}></Center>
                 <HStack bg={colors.white}
@@ -42,7 +42,7 @@ export default function Success({ navigation }) {
                     borderTopLeftRadius={20}
                     borderRightRadius={20}
                 >
-                    <Box safeArea p="2" bottom='30%' width='100%' >
+                    <Box safeArea p="2" bottom='20%' width='100%' >
                         <Image
                             source={Images.success}
                             alt="Alternate Text"
@@ -79,13 +79,13 @@ export default function Success({ navigation }) {
                                 height={50}
                                 width='85%'
                                 alignSelf='center'
-                                onPress={() => navigation.navigate('Success')}
+                                onPress={() => navigation.navigate('')}
                             >
                                 <Text
                                     color={colors.white}
                                     fontWeight='bold'
                                     fontSize={16}>
-                                    {locale.Login.Button.ENTRAR}
+                                    {locale.Button.CONTINUAR}
                                 </Text>
                             </Button>
                         </View>
