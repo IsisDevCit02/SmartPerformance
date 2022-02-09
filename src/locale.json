@@ -2,14 +2,7 @@
     "Home": {
         "Label": {
             "BEM_VINDO": "Bem-Vindo"
-        },
-        "Button": {}
-    },
-    "Cliente": {
-        "Label": {
-            "ROTINA_PEDIDO": "Rotina de Pedido"
-        },
-        "Button": {}
+        }
     },
     "Login": {
         "Label": {
@@ -17,18 +10,84 @@
             "ENTRE_CREDENCIAIS": "Entre com suas credenciais",
             "ESQUECI_SENHA": "Esqueci a senha",
             "SUCESSO": "Sucesso",
-            "SENHA_ALTERADA_SUCESSO":"Sua senha foi alterada com sucesso! Você ja pode logar com sua novas credênciais"
+            "SENHA_ALTERADA_SUCESSO": "Sua senha foi alterada com sucesso! Você ja pode logar com sua novas credenciais"
         },
         "Input": {
-            "DIGITE_EMAIL": "Digite seu email",
+            "DIGITE_SENHA": "Digite sua senha",
             "DIGITE_LOGIN": "Digite seu Login",
             "DIGITE_CODIGO": "Digite o código",
             "DIGITE_NOVA_SENHA": "Digite sua nova senha",
             "CONFIRME_NOVA_SENHA": "Confirme sua nova senha"
-        },
-        "Button": {
-            "ENTRAR": "Entrar",
-            "ESQUECI_SENHA": "Esqueci a senha"
         }
+    },
+    "Profile": {
+        "Label": {
+            "DADOS_PESSOAIS": " Dados pessoais",
+            "ENDERECO": "Endereço",
+            "DADOS_PESSOAS": "Dados Pessoais"
+        },
+        "Input": {
+            "NOME": "Nome",
+            "CPF": "CPF",
+            "DATA_NASCIMENTO": "Data de Nascimento",
+            "SEXO": "Sexo",
+            "CEP": "CEP",
+            "CIDADE": "Cidade",
+            "UF": "UF",
+            "BAIRRO": "Bairro",
+            "MUNICIPIO": "Município",
+            "ENDEREÇO": "Endereço",
+            "NUMERO": "Número",
+            "COMPLEMENTO": "Complemento"
+        }
+    },
+    "OnBoarding": {
+        "Label": {
+            "TRABALHANDO": "Trabalhando"
+        }
+    },
+    "WorkStatus": {
+        "Label": {
+            "TRABALHANDO": "Trabalhando",
+            "AFASTADO": "Afastado"
+        }
+    },
+    "WalletClient": {
+        "Label": {
+            "DADOS_CADASTRAIS": "Dados cadastrais",
+            "HISTORICO_PEDIDO": "Histórico de pedidos",
+            "METAS":"Metas",
+            "PEDIDOS":"Pedidos",
+            "GEOLOCALIZACAO": "Geolocalização",
+            "CHECK_IN":"Check - in",
+            "MISSOES": "Missões",
+            "EXECUCAO_PDV":"Execução no PDV",
+            "ADICIONAR_PEDIDO":"Adicionar novo pedido",
+            "INFO_PEDIDO":"Informações do Pedido",
+            "ORDEM_COMPRA":"Ordem de Compra",
+            "PRODUTOS":"Produtos"
+       
+        },
+        "Input": {
+            "PESQUISAR": "Pesquisar",
+            "ORG_VENDA":"Org. De venda",
+            "CODIGO_VENDA":"Código do Tipo de Venda",
+            "DATA_PEDIDO": "Data do Pedido",
+            "DATA_ENTREGA": "Data de Entrega",
+            "MEIO_PAGAMENTO": "Meio de Pagamento",
+            "PRAZO":"Prazo",
+            "TABELA_PRECO":"Tabela de Preço",
+            "PRONTA_ENTREGA":"Pronta Entrega",
+            "ORCAMENTO":"Orçamento"
+        }
+    },
+    "Button": {
+        "VOLTAR": "Voltar",
+        "ENTRAR": "Entrar",
+        "ESQUECI_SENHA": "Esqueci a senha",
+        "CANCELAR": "Cancelar",
+        "SALVAR": "Salvar",
+        "CONTINUAR": "Continuar",
+        "INSERIR_PRODUTO":"Inserir Produto"
     }
 }

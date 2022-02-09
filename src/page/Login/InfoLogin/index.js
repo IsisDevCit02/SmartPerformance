@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 import * as locale from '../../../locale.json'
 import { Images } from '../../../assets/img';
 import { colors } from '../../../assets/css/styles';
-import { Dimensions, FlatList, Image, StatusBar, View } from 'react-native'
+import { Dimensions, FlatList, Image, ScrollView, StatusBar, View } from 'react-native'
 import { Box, Button, Center, FormControl, Heading, HStack, Input, NativeBaseProvider, Text } from 'native-base';
 
 
@@ -30,7 +30,6 @@ export default function InfoLogin({ navigation }) {
             width: imageW,
             height: imageH,
             resizeMode: 'stretch',
-            
           }
         }
       />
@@ -46,19 +45,19 @@ export default function InfoLogin({ navigation }) {
             resizeMode: 'stretch',
             width: '25%',
             height: 50,
-            top: '10%'
+        
           }}
         />
         <Center flex={1}></Center>
         <HStack bg={colors.white}
           alignItems="center"
           justifyContent="center"
-          height="80%"
+          height="87%"
           width='100%'
           borderTopLeftRadius={20}
           borderRightRadius={20}
         >
-          <Box safeArea p="2" bottom={10}>
+          <Box safeArea p="2" marginTop='5%'>
             <Heading
               fontSize={18}
               color={colors.colorRed}
@@ -79,7 +78,7 @@ export default function InfoLogin({ navigation }) {
             <FormControl width='85%' alignSelf='center' marginTop='15%'>
               <Input
                 variant="underlined"
-                placeholder={locale.Login.Input.DIGITE_EMAIL}
+                placeholder={locale.Login.Input.DIGITE_LOGIN}
                 borderBottomColor={colors.colorRed}
                 fontSize={12}
                 padding={4}
@@ -91,10 +90,14 @@ export default function InfoLogin({ navigation }) {
                 }
               />
             </FormControl>
-            <FormControl width='85%' alignSelf='center' marginTop='5%'>
+            <FormControl
+              width='85%'
+              alignSelf='center'
+              marginTop='5%'
+              paddingBottom='5%'>
               <Input
                 variant="underlined"
-                placeholder={locale.Login.Input.DIGITE_LOGIN}
+                placeholder={locale.Login.Input.DIGITE_SENHA}
                 borderBottomColor={colors.colorRed}
                 fontSize={12}
                 padding={4}
@@ -107,7 +110,7 @@ export default function InfoLogin({ navigation }) {
               />
             </FormControl>
 
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1, }}>
               <StatusBar hidden />
               <FlatList
                 data={image}
@@ -117,20 +120,20 @@ export default function InfoLogin({ navigation }) {
                 renderItem={renderItem}
               />
             </View>
-            <View>
+            <View style={{ paddingBottom: '10%' }}>
               <Button
                 backgroundColor={colors.colorRed}
                 borderRadius={15}
                 height={50}
                 width='85%'
                 alignSelf='center'
-               // onPress={() => navigation.navigate('')}
-                >
+                onPress={() => navigation.navigate('OnBoarding')}
+              >
                 <Text
                   color={colors.white}
                   fontWeight='bold'
                   fontSize={16}>
-                  {locale.Login.Button.ENTRAR}
+                  {locale.Button.ENTRAR}
                 </Text>
               </Button>
               <Button
@@ -147,7 +150,7 @@ export default function InfoLogin({ navigation }) {
                   color={colors.colorRed}
                   fontWeight='bold'
                   fontSize={16}>
-                  {locale.Login.Button.ESQUECI_SENHA}
+                  {locale.Button.ESQUECI_SENHA}
                 </Text>
               </Button>
             </View>
