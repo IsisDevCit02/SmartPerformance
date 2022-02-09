@@ -1,92 +1,85 @@
-import { Box, Center, Heading, HStack, IconButton, NativeBaseProvider, Stack } from 'native-base';
+import { Box, Center, Heading, IconButton, NativeBaseProvider } from 'native-base';
 import React from 'react';
-import { Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Entypo';
+import Speedometer from 'react-native-vector-icons/MaterialCommunityIcons';
+import Wallet from 'react-native-vector-icons/AntDesign';
 import { colors } from '../../assets/css/styles';
+import styles from './styles';
 import * as locale from '../../locale.json';
-export default function OnBoarding() {
+import { Image, TouchableOpacity } from 'react-native';
+import { Icones } from '../../assets/icons/index';
+
+export default function OnBoarding({ navigation }) {
     const hour = new Date()
-    const zeroFill = n => {
-        return ('0' + n).slice(-2);
-    }
-    const dateTime = zeroFill(hour.getHours()) + ':' + zeroFill(hour.getUTCMinutes()) + ':' + zeroFill(hour.getUTCSeconds())
+
+
     return (
         <NativeBaseProvider>
-            <View style={{ alignItems: 'flex-start' }}>
-                <IconButton
-                    size="md"
-                    variant="solid"
-                    backgroundColor={colors.white}
-                    borderRadius={30}
-                    margin={5}
-                    style={{
-                        shadowColor: colors.colorGray,
-                        shadowOpacity: 0.50,
-                        shadowRadius: 2,
-                        shadowOffset: { width: 0, height: 2 },
-                        elevation: 20
-                    }}
-                    icon={<Icon
-                        name='menu'
-                        size={20}
-                        style={{ color: colors.colorRed }}
-
-                    />
-                    }
-                />
-                <Stack
-                    p={4}
-                    space={2}
-                    width='60%'
-                    height='20%'
-                    alignSelf='center'
-                    alignItems='flex-start'
-                    justifyContent='center'
-                    bottom='20%'
-                    backgroundColor={colors.white}
-                    borderBottomRadius={15}
-                    style={{
-                        shadowColor: colors.colorGray,
-                        shadowOpacity: 0.50,
-                        shadowRadius: 3,
-                        shadowOffset: { width: -2, height: 4 },
-                        elevation: 20
-                    }}
-                    paddingY={25}
-                    paddingX={45}
-                >
-                    <Stack space={2} flexDirection='row'>
-                        <Icon
-                            name='user'
-                            size={45}
+            <Box alignSelf='flex-start'>
+                <Box flexDirection='row'>
+                    <Box>
+                        <IconButton
+                            size="md"
+                            variant="solid"
+                            backgroundColor={colors.white}
+                            borderRadius={30}
+                            margin={5}
                             style={{
-                                color: colors.colorRed
+                                shadowColor: colors.colorGray,
+                                shadowOpacity: 0.50,
+                                shadowRadius: 2,
+                                shadowOffset: { width: 0, height: 2 },
+                                elevation: 20
+                            }}
+                            icon={<Icon
+                                name='menu'
+                                size={20}
+                                style={{ color: colors.colorRed }}
+
+                            />
+                            }
+                        />
+                    </Box>
+                    <Box
+                        p={4}
+                        width='70%'
+                        height={90}
+                        alignSelf='center'
+                        alignItems='flex-end'
+                        justifyContent='center'
+                        backgroundColor={colors.white}
+                        borderBottomRadius={15}
+                        style={styles.cardStatus}
+                        paddingY={25}
+                        paddingX={45}
+                        flexDirection='row'
+                    >
+                        <Image
+                            source={Icones.bossIcon}
+                            resizeMode={"stretch"}
+                            width={90}
+                            height={90}
+                            style={{ marginRight: 10 }}
+                        />
+                        <Heading
+                            color={colors.colorRed}>
+                            {locale.OnBoarding.Label.TRABALHANDO}
+                        </Heading>
+                        <Wallet
+                            name='checkcircle'
+                            size={25}
+                            style={{
+                                color: colors.green,
+                                margin: 5
                             }}
                         />
-                        <View>
-                            <Heading
-                                size='md'
-                                ml={-0.5}
-                                mt={-1}
-                                color={colors.colorRed}>
-                                {locale.OnBoarding.Label.TRABALHANDO}
-                            </Heading>
-                            <View>
-                                <Text
-                                    style={{
-                                        color: colors.colorGrayStrong,
-                                        fontSize: 24,
-                                        fontWeight: 'bold',
-                                        left: '2%'
-                                    }}>{dateTime}</Text>
-                            </View>
-                        </View>
-                    </Stack>
-                </Stack>
-                <Center flex={1}></Center>
-                <View style={{ top: '50%' }}>
+                    </Box>
+                </Box>
+                <Center flex={.76}></Center>
+                <Box alignSelf='flex-start'>
                     <IconButton
                         size="lg"
+                        onPress={() => navigation.navigate('WorkStatus')}
                         variant="solid"
                         backgroundColor={colors.colorRed}
                         borderRadius={30}
@@ -102,97 +95,64 @@ export default function OnBoarding() {
                             name='suitcase'
                             size={20}
                             style={{ color: colors.white }}
-
-
                         />
                         }
                     />
-                </View>
-                <Center flex={1}></Center>
-                <HStack bg={colors.colorRed}
-                    alignItems="center"
-                    alignSelf='center'
-                    height='15%'
-                    top='90%'
-                    width='95%'
-                    borderRadius={30}
-                    flexDirection='row'
-                    
-                >
-                    <IconButton
-                        size="lg"
-                        variant="solid"
-                        backgroundColor={colors.colorRed}
-                        borderRadius={30}
-                        icon={<Icon
-                            name='suitcase'
-                            size={30}
-                            style={{ color: colors.white }}
-                            
+                </Box>
+                <Center flex={.1}></Center>
 
-                        />
-                        }
+            </Box>
+            <Box
+                backgroundColor={colors.colorRed}
+                alignSelf='center'
+                flexDirection='row'
+                alignItems="center"
+                width='90%'
+                height='7%'
+                borderRadius={30}
+                justifyContent='space-around'
+            >
+                <TouchableOpacity style={{ padding: 5 }}>
+                    <Image
+                        source={Icones.speedometer}
+                        resizeMode={"stretch"}
+                        width={15}
+                        height={15}
                     />
-                     <IconButton
-                        size="lg"
-                        variant="solid"
-                        backgroundColor={colors.colorRed}
-                        borderRadius={30}
-                        icon={<Icon
-                            name='suitcase'
-                            size={30}
-                            style={{ color: colors.white }}
-
-
-                        />
-                        }
+                </TouchableOpacity>
+                <TouchableOpacity 
+                style={{ padding: 5 }}
+                onPress={() => navigation.navigate('WalletClient')}>
+                    <Wallet
+                        name='wallet'
+                        size={40}
+                        style={{ color: colors.white }}
                     />
-                     <IconButton
-                        size="lg"
-                        variant="solid"
-                        backgroundColor={colors.colorRed}
-                        borderRadius={30}
-                        icon={<Icon
-                            name='suitcase'
-                            size={30}
-                            style={{ color: colors.white }}
-
-
-                        />
-                        }
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.iconMiddle}>
+                    <Image
+                        source={Icones.prancheta}
+                        resizeMode={"stretch"}
+                        width={15}
+                        height={15}
                     />
-                     <IconButton
-                        size="lg"
-                        variant="solid"
-                        backgroundColor={colors.colorRed}
-                        borderRadius={30}
-                        icon={<Icon
-                            name='suitcase'
-                            size={30}
-                            style={{ color: colors.white }}
-
-
-                        />
-                        }
+                </TouchableOpacity>
+                <TouchableOpacity style={{ padding: 5 }}>
+                    <Speedometer
+                        name='text-box-multiple-outline'
+                        size={40}
+                        style={{ color: colors.white }}
                     />
-                     <IconButton
-                        size="lg"
-                        variant="solid"
-                        backgroundColor={colors.colorRed}
-                        borderRadius={30}
-                        icon={<Icon
-                            name='suitcase'
-                            size={30}
-                            style={{ color: colors.white }}
-
-
-                        />
-                        }
+                </TouchableOpacity>
+                <TouchableOpacity style={{ padding: 5 }}>
+                    <Speedometer
+                        name='store'
+                        size={40}
+                        style={{ color: colors.white }}
                     />
-
-                </HStack>
-
-            </View>
+                </TouchableOpacity>
+            </Box>
         </NativeBaseProvider>
     );
 }

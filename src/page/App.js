@@ -3,8 +3,8 @@ import styles from './styles';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-
 import { colors } from '../assets/css/styles';
+
 import Login from './Login/index';
 import InfoLogin from './Login/InfoLogin/index';
 import ForgotPassword from './Login/ForgotPassword/index';
@@ -14,7 +14,10 @@ import Success from './Login/ForgotPassword/Success/index';
 import Perfil from './Profile/index';
 import EditProfile from './Profile/EditProfile/index';
 import OnBoarding from './OnBoarding/index';
-
+import WorkStatus from './WorkStatus/index';
+import WalletClient from './WalletClient/index';
+import InfoClients from './WalletClient/InfoClients';
+import AddNewRequest from './WalletClient/AddNewRequest/index'
 
 const Stack = createNativeStackNavigator()
 export default function SmartPerformance() {
@@ -124,6 +127,62 @@ export default function SmartPerformance() {
           component={OnBoarding}
           options={{
             headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="WorkStatus"
+          component={WorkStatus}
+          options={{
+            title: 'Status de trabalho',
+            
+            headerBackTitleVisible: false,
+            headerStyle: {
+              backgroundColor: colors.colorRed,
+            },
+            headerTintColor: colors.white,
+            headerShadowVisible: false
+          }}
+        />
+        <Stack.Screen
+          name="WalletClient"
+          component={WalletClient}
+          options={{
+            title: 'Clientes',
+            
+            headerBackTitleVisible: false,
+            headerStyle: {
+              backgroundColor: colors.colorRed,
+            },
+            headerTintColor: colors.white,
+            headerShadowVisible: false
+          }}
+        />
+        <Stack.Screen
+          name="InfoClients"
+          component={InfoClients}
+          options={{
+            title: 'Roteiro do dia',
+            
+            headerBackTitleVisible: false,
+            headerStyle: {
+              backgroundColor: colors.colorRed,
+            },
+            headerTintColor: colors.white,
+            headerShadowVisible: false
+          }}
+        />
+        <Stack.Screen
+          name="AddNewRequest"
+          component={AddNewRequest}
+          options={{
+            title: 'Clientes',
+            
+            headerBackTitleVisible: false,
+            headerStyle: {
+              backgroundColor: colors.colorRed,
+            },
+            headerTintColor: colors.white,
+            headerShadowVisible: false
           }}
         />
       </Stack.Navigator>
