@@ -89,5 +89,12 @@
         "SALVAR": "Salvar",
         "CONTINUAR": "Continuar",
         "INSERIR_PRODUTO":"Inserir Produto"
+    },
+    "Management":{
+        "INFORMACOES": "Informações de vendas",
+        "SKU_FOCO": "SKUs Foco",
+        "ARVORE_PRODUTIVIDADE": "Árvore da Produtividade",
+        "PEDIDOS": "Pedidos",
+        "ESTOQUE": "Estoque"
     }
 }

@@ -112,7 +112,11 @@ export default function OnBoarding({ navigation }) {
                 borderRadius={30}
                 justifyContent='space-around'
             >
-                <TouchableOpacity style={{ padding: 5 }}>
+                <TouchableOpacity 
+                style={{ padding: 5 }}
+                onPress={() => navigation.navigate('Management')}
+                
+                >
                     <Image
                         source={Icones.speedometer}
                         resizeMode={"stretch"}

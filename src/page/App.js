@@ -18,6 +18,10 @@ import WorkStatus from './WorkStatus/index';
 import WalletClient from './WalletClient/index';
 import InfoClients from './WalletClient/InfoClients';
 import AddNewRequest from './WalletClient/AddNewRequest/index'
+import Management from './Management';
+import { Center } from 'native-base';
+import SalesDetail from './Management/SalesDetail';
+
 
 const Stack = createNativeStackNavigator()
 export default function SmartPerformance() {
@@ -185,6 +189,38 @@ export default function SmartPerformance() {
             headerShadowVisible: false
           }}
         />
+         <Stack.Screen
+          name="Management"
+          component={Management}
+          options={{
+            title: 'Gestão',
+            
+            headerBackTitleVisible: false,
+            headerStyle: {
+              backgroundColor: colors.colorRed,
+              
+            },
+            headerTintColor: colors.white,
+            headerShadowVisible: false
+          }}
+        />
+         <Stack.Screen
+          name="SalesDetail"
+          component={SalesDetail}
+          options={{
+            title: 'Gestão',
+            
+            headerBackTitleVisible: false,
+            headerStyle: {
+              backgroundColor: colors.colorRed,
+              
+            },
+            headerTintColor: colors.white,
+            headerShadowVisible: false
+          }}
+        />
+         
+        
       </Stack.Navigator>
     </NavigationContainer>
 
