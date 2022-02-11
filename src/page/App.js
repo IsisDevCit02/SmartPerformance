@@ -21,6 +21,10 @@ import AddNewRequest from './WalletClient/AddNewRequest/index'
 import Management from './Management';
 import { Center } from 'native-base';
 import SalesDetail from './Management/SalesDetail';
+import Orders from './Management/Orders';
+import ProductivityTree from './Management/ProductivityTree';
+import SkuFoco from './Management/SkuFoco';
+import Stock from './Management/Stock';
 
 
 const Stack = createNativeStackNavigator()
@@ -207,6 +211,66 @@ export default function SmartPerformance() {
          <Stack.Screen
           name="SalesDetail"
           component={SalesDetail}
+          options={{
+            title: 'Gestão',
+            
+            headerBackTitleVisible: false,
+            headerStyle: {
+              backgroundColor: colors.colorRed,
+              
+            },
+            headerTintColor: colors.white,
+            headerShadowVisible: false
+          }}
+        />
+         <Stack.Screen
+          name="Orders"
+          component={Orders}
+          options={{
+            title: 'Gestão',
+            
+            headerBackTitleVisible: false,
+            headerStyle: {
+              backgroundColor: colors.colorRed,
+              
+            },
+            headerTintColor: colors.white,
+            headerShadowVisible: false
+          }}
+        />
+         <Stack.Screen
+          name="ProductivityTree"
+          component={ProductivityTree}
+          options={{
+            title: 'Gestão',
+            
+            headerBackTitleVisible: false,
+            headerStyle: {
+              backgroundColor: colors.colorRed,
+              
+            },
+            headerTintColor: colors.white,
+            headerShadowVisible: false
+          }}
+        />
+         <Stack.Screen
+          name="SkuFoco"
+          component={SkuFoco}
+          options={{
+            title: 'Gestão',
+            
+            headerBackTitleVisible: false,
+            headerStyle: {
+              backgroundColor: colors.colorRed,
+              
+            },
+            headerTintColor: colors.white,
+            headerShadowVisible: false
+          }}
+        />
+         <Stack.Screen
+          name="Stock"
+          component={Stock}
           options={{
             title: 'Gestão',
             

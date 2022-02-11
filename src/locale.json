@@ -96,5 +96,11 @@
         "ARVORE_PRODUTIVIDADE": "Árvore da Produtividade",
         "PEDIDOS": "Pedidos",
         "ESTOQUE": "Estoque"
+    },
+    "SalesDetail":{
+        "DIAS_UTEIS":"Dias úteis",
+        "DIAS_CORRIDOS":"Dias Corridos",
+        "FALTAM":"Faltam"
+
     }
 }
