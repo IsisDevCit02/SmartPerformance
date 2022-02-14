@@ -19,7 +19,6 @@ import LinearGradient from 'react-native-linear-gradient';
 import * as locale from '../../locale.json';
 import { TouchableOpacity } from 'react-native';
 
-
 export default function Management({ navigation }) {
   return (
     <NativeBaseProvider>
@@ -37,7 +36,8 @@ export default function Management({ navigation }) {
              allignItems="center"
              alignSelf="center"
              justifyContent="space-around"
-             borderRadius="30%"
+             borderRadius={25} 
+             
              width="90%"
              height="25%"
              margin={20}
@@ -82,8 +82,22 @@ export default function Management({ navigation }) {
               alignSelf="center"
               justifyContent="space-between"
             >
+              <LinearGradient colors={[colors.colorRedGradient, colors.colorOrangeGradient]} 
+              allignItems="center"
+              alignSelf="center"
+              justifyContent="space-around"
+              borderRadius={25} 
+              
+              width="50%"
+              height="25%"
+              margin={20}
+              
+              
+              
+              
+              >
               <Box
-                bg={colors.colorOrange}
+                
                 borderRadius={15}
                 width="45%"
                 allignItems="center"
@@ -103,6 +117,7 @@ export default function Management({ navigation }) {
                   textAlign='center'
                   fontSize="md" onPress={() => navigation.navigate('SkuFoco')} >{locale.Management.SKU_FOCO}</Text>
               </Box>
+              </LinearGradient> 
               <Box
                 bg={colors.colorOrange}
                 borderRadius={15}
