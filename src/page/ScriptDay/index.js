@@ -3,28 +3,31 @@ import React, { Component } from 'react';
 import CardComponent from '../../components/CardComponent';
 import infoClients from './infoClient.json';
 
-class WalletClient extends Component {
 
+class ScriptDay extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            pesquisar: '',
-            data:[]
+            data: []
         }
+
     }
+
     componentDidMount = () => {
         this.setState({ data: infoClients })
     }
+
     render() {
         return (
             <NativeBaseProvider>
                 <CardComponent
                     data={this.state.data}
-                    screen="WalletClient"
+                    screen="ScriptDay"
                 />
             </NativeBaseProvider>
-        );
+        )
     }
 }
-export default WalletClient;
+
+export default ScriptDay;

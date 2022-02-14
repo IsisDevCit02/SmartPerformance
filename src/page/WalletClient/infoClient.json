@@ -1,0 +1,53 @@
+[
+    {
+     "id": 1,
+      "razaoSocial": "Alimentos- LTDA",
+      "image":"https://i.pinimg.com/originals/18/77/59/187759df60cc939a21e66f16d18072cb.jpg",
+      "nomeFantasia": "Mercado do Teste",
+      "cnpj": "54.895.440/0001-83",
+      "endereco": {
+          "cep": "72204116",
+          "logradouro": "Qnm 8 conjunto A",
+          "bairro": "Ceilandia Norte"
+      },
+      "incricaoEstadual":"0000000",
+      "cep":"72204116",
+      "telefone":"6100000000",
+      "statusCliente":"Ativo e Liberado",
+      "ultimaVisita":"12/09/2021"
+    },
+    {
+     "id": 2,
+      "razaoSocial": "Teste-LTDA",
+      "nomeFantasia": "Mercearia do Joâo",
+      "image":"https://img.lojasrenner.com.br/item/556711051/zoom/3.jpg",
+      "cnpj": "25.256.911/0001-05",
+      "endereco": {
+          "cep": "72304116",
+          "logradouro": "QN 122 conjunto 15",
+          "bairro": "Samamabaia Sul"
+      },
+      "incricaoEstadual":"123456789",
+      "cep":"200642",
+      "telefone":"6132567894",
+      "statusCliente":"Bloqueado",
+      "ultimaVisita":"12/02/2022"
+    },
+    {
+     "id": 3,
+      "razaoSocial": "juquinha-LTDA",
+      "nomeFantasia": "Mercearia do Juca",
+      "image":"https://pbs.twimg.com/profile_images/1227684446826041345/6wwgBPk-_400x400.jpg",
+      "cnpj": "25.256.911/0001-05",
+      "endereco": {
+          "cep": "72304116",
+          "logradouro": "Qnl 16 ",
+          "bairro": "Taguatinga"
+      },
+      "incricaoEstadual":"95678412",
+      "cep":"72304559",
+      "telefone":"6135987461",
+      "statusCliente":"Ativo e Liberado",
+      "ultimaVisita":"20/02/2022"
+    }
+  ]
