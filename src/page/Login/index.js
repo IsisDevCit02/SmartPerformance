@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 //import LinearGradient from 'react-native-linear-gradient';
 import {
   NativeBaseProvider,
@@ -16,44 +16,47 @@ import { colors } from "../../assets/css/styles";
 import { Images } from '../../assets/img/index';
 
 
-export default function Login({ navigation }) {
-  return (
-    // <LinearGradient colors={[colors.homeColor, colors.colorGradient]} style={styles.contentTop}>
-    <NativeBaseProvider >
-      <Box flex={1} alignItems="center" justifyContent="center" bg={colors.coberColor}>
-        <Image
-          source={Images.logoKobber}
-          alt="Alternate Text"
-          resizeMode={"stretch"}
-          width={250}
-          height={120}
-          marginTop='70%'
-        />
-        <Center flex={1}></Center>
-        <HStack bg={colors.white}
-          alignItems="center"
-          justifyContent="center"
-          height={150}
-          width='100%'
-          borderTopLeftRadius={20}
-          borderRightRadius={20}
-        >
-          <Button
-            bg={colors.colorRed}
-            width="85%"
-            height={50}
-            borderRadius={15}
-            onPress={() => navigation.navigate('InfoLogin')}>
-            <Text
-              color={colors.white}
-              fontSize={18}
-              fontWeight="bold">{locale.Button.ENTRAR}</Text>
-          </Button>
-        </HStack>
-      </Box>
+class Login extends Component{
+
+  render(){
+    return (
+      <NativeBaseProvider >
+        <Box flex={1} alignItems="center" justifyContent="center" bg={colors.coberColor}>
+          <Image
+            source={Images.logoKobber}
+            alt="Alternate Text"
+            resizeMode={"stretch"}
+            width={250}
+            height={120}
+            marginTop='70%'
+          />
+          <Center flex={1}></Center>
+          <HStack bg={colors.white}
+            alignItems="center"
+            justifyContent="center"
+            height={150}
+            width='100%'
+            borderTopLeftRadius={20}
+            borderRightRadius={20}
+          >
+            <Button
+              bg={colors.colorRed}
+              width="85%"
+              height={50}
+              borderRadius={15}
+              onPress={() =>  this.props.navigation.navigate('InfoLogin')}>
+              <Text
+                color={colors.white}
+                fontSize={18}
+                fontWeight="bold">{locale.Button.ENTRAR}</Text>
+            </Button>
+          </HStack>
+        </Box>
 
 
-    </NativeBaseProvider>
-    // </LinearGradient>
-  );
+      </NativeBaseProvider>
+
+    );
+  }
 }
+export default Login;

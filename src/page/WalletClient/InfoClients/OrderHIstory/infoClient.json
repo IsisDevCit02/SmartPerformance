@@ -1,0 +1,31 @@
+[
+    {
+     "id": 1,
+      "nomeFantasia": "Mercado do Teste",
+      "numeroPedido":40028922,
+      "tipo":"(Venda Mobile) Pedido de venda",
+      "Emissao":"02/01/2022",
+      "Faturado":"15/02/2022",
+      "statusPedido":"Entregue"
+    },
+    {
+      "id": 2,
+       "nomeFantasia": "Mercado do Caio",
+       "numeroPedido":552654,
+       "tipo":"(Venda Mobile) Pedido de venda",
+       "Emissao":"02/01/2022",
+       "Faturado":"15/02/2022",
+       "statusPedido":"Entregue"
+     },
+     {
+      "id": 4,
+       "nomeFantasia": "Mercado do tio Juca",
+       "numeroPedido":56749,
+       "tipo":"(Venda Mobile) Pedido de venda",
+       "Emissao":"02/01/2022",
+       "Faturado":"15/02/2022",
+       "statusPedido":"Devolvido"
+     }
+     
+   
+  ]

@@ -1,0 +1,56 @@
+[
+    {
+     "id": 1,
+      "razaoSocial": "Alimentos- LTDA",
+      "image":"https://i.pinimg.com/originals/18/77/59/187759df60cc939a21e66f16d18072cb.jpg",
+      "nomeFantasia": "Mercado do Teste",
+      "cnpj": "54.895.440/0001-83",
+      "endereco": {
+          "cep": "72204116",
+          "logradouro": "Qnm 8 conjunto A",
+          "bairro": "Ceilandia Norte"
+      },
+      "incricaoEstadual":"0000000",
+      "cep":"72204116",
+      "telefone":"6100000000",
+      "statusCliente":"Ativo e Liberado",
+      "ultimaVisita":"12/09/2021",
+      "statusVisita":"Visita Relizada"
+    },
+    {
+     "id": 2,
+      "razaoSocial": "Teste-LTDA",
+      "nomeFantasia": "Mercearia do Joâo",
+      "image":"https://img.lojasrenner.com.br/item/556711051/zoom/3.jpg",
+      "cnpj": "25.256.911/0001-05",
+      "endereco": {
+          "cep": "72304116",
+          "logradouro": "QN 122 conjunto 15",
+          "bairro": "Samamabaia Sul"
+      },
+      "incricaoEstadual":"123456789",
+      "cep":"200642",
+      "telefone":"6132567894",
+      "statusCliente":"Bloqueado",
+      "ultimaVisita":"12/02/2022",
+      "statusVisita":"Em andamento"
+    },
+    {
+     "id": 3,
+      "razaoSocial": "Blabla-LTDA",
+      "nomeFantasia": "Mercearia vem gastar",
+      "image":"https://i.pinimg.com/564x/91/59/c5/9159c5637f3cab3fdd89539734c19f24.jpg",
+      "cnpj": "81.107.615/0001-13",
+      "endereco": {
+          "cep": "72304116",
+          "logradouro": "Rua São Bernado",
+          "bairro": "Samamabaia Sul"
+      },
+      "incricaoEstadual":"2368942",
+      "cep":"203659874",
+      "telefone":"6132565539",
+      "statusCliente":"Ativo e Liberado",
+      "ultimaVisita":"12/02/2022",
+      "statusVisita":"Justificar Visita"
+    }
+  ]
