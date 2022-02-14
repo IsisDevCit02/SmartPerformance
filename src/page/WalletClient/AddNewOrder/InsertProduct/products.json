@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "nomeProduto": "Cookies Integrais",
+        "image": "https://kobber.com.br/wp-content/uploads/2018/04/gal_Cookies_Integral_Baunilha_com_Gotas_de_Chocolate_745.jpg",
+        "cod": "Z14267",
+        "unidade":"Un",
+        "sugerido":"6"
+    },
+    {
+        "id": 2,
+        "nomeProduto": "Granola de Cacau",
+        "image": "https://tezeio.vteximg.com.br/arquivos/ids/272168-1000-1000/7891772144091_1_1.jpg?v=637629952804100000",
+        "cod": "Z14267",
+        "unidade": "Un",
+        "sugerido":"14"
+    },
+    {
+        "id": 3,
+        "nomeProduto": "Barra de Cereal ",
+        "image": "https://kobber.com.br/wp-content/uploads/2019/11/Display-Kobber_Bolo-de-chocolate_Classic.png",
+        "cod": "Z14267",
+        "unidade": "Un",
+        "sugerido":"26"
+    },
+    {
+        "id": 4,
+        "nomeProduto": "Granola de Tapioca",
+        "image": "https://emporioquatroestrelas.vteximg.com.br/arquivos/ids/159646-1000-1000/granolacococastanha600g-EMP.png?v=637141989068170000",
+        "cod": "Z14267",
+        "unidade": "Un",
+        "sugerido":"12"
+    }
+]

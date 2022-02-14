@@ -138,6 +138,7 @@ import { Icones } from '../../assets/icons/index';
                         />
                     </TouchableOpacity>
                     <TouchableOpacity 
+                    onPress={() => this.props.navigation.navigate("CertificateMedical")}
                     style={{ padding: 5 }}
                    >
                         <Speedometer
