@@ -32,45 +32,44 @@ export default function Management({ navigation }) {
           <Box>
             <Center flex={0}></Center>
 
-            <LinearGradient colors={[colors.colorRedGradient, colors.colorOrangeGradient]} 
-             allignItems="center"
-             alignSelf="center"
-             justifyContent="space-around"
-             borderRadius={25} 
-             
-             width="90%"
-             height="25%"
-             margin={20}
-            >
-        
-            <Box button
-
-              width="90%"
-              height="25%"
-              margin={5}
-              flexDirection="row"
+            <LinearGradient colors={[colors.colorRedGradient, colors.colorOrangeGradient]}
               allignItems="center"
               alignSelf="center"
               justifyContent="space-around"
-              
-                >
+              borderRadius={25}
 
-              <Image
-                source={Icones.grafico}
-                resizeMode={"stretch"}
-                width={65}
-                height={90}
-                tintColor={colors.white}
-                alignSelf='center'
-              />
+              width="90%"
+              height="25%"
+              margin={20}
+            >
+              <Box button
 
-              <Text
+                width="90%"
+                height="25%"
+                margin={5}
+                flexDirection="row"
+                allignItems="center"
                 alignSelf="center"
-                color={colors.white}
-                textAlign='center'
-                fontSize="md" onPress={() => navigation.navigate('SalesDetail')} >{locale.Management.INFORMACOES}</Text>
+                justifyContent="space-around"
+              >
 
-            </Box>
+                <Image
+                  source={Icones.grafico}
+                  resizeMode={"stretch"}
+                  width={65}
+                  height={90}
+                  tintColor={colors.white}
+                  alignSelf='center'
+                />
+
+                <Text
+                  alignSelf="center"
+                  color={colors.white}
+                  textAlign='center'
+                  fontWeight={800}
+                  fontSize="md" onPress={() => navigation.navigate('SalesDetail')} >{locale.Management.INFORMACOES}</Text>
+
+              </Box>
             </LinearGradient>
             <Box
 
@@ -82,65 +81,57 @@ export default function Management({ navigation }) {
               alignSelf="center"
               justifyContent="space-between"
             >
-              <LinearGradient colors={[colors.colorRedGradient, colors.colorOrangeGradient]} 
-              allignItems="center"
-              alignSelf="center"
-              justifyContent="space-around"
-              borderRadius={25} 
-              
-              width="50%"
-              height="25%"
-              margin={20}
-              
-              
-              
-              
-              >
-              <Box
-                
-                borderRadius={15}
-                width="45%"
-                allignItems="center"
-                justifyContent="center"
+              <LinearGradient colors={[colors.colorRedGradient, colors.colorOrangeGradient]}
+                borderRadius={15} width="45%" justifyContent="center" >
+                <Box
 
-              >
-                <Image
-                  source={Icones.target}
-                  resizeMode={"stretch"}
-                  width={90}
-                  height={90}
-                  tintColor={colors.white}
-                  alignSelf='center'
-                />
-                <Text
-                  color={colors.white}
-                  textAlign='center'
-                  fontSize="md" onPress={() => navigation.navigate('SkuFoco')} >{locale.Management.SKU_FOCO}</Text>
-              </Box>
-              </LinearGradient> 
-              <Box
-                bg={colors.colorOrange}
+                  borderRadius={15}
+                  allignItems="center"
+
+                >
+                  <Image
+                    source={Icones.target}
+                    resizeMode={"stretch"}
+                    width={90}
+                    height={90}
+                    tintColor={colors.white}
+                    alignSelf='center'
+                  />
+                  <Text
+                    color={colors.white}
+                    textAlign='center'
+                    fontWeight={800}
+                    fontSize="md" onPress={() => navigation.navigate('SkuFoco')} >{locale.Management.SKU_FOCO}</Text>
+                </Box>
+              </LinearGradient>
+              <LinearGradient colors={[colors.colorRedGradient, colors.colorOrangeGradient]}
                 borderRadius={15}
                 width="45%"
-                allignItems="center"
                 justifyContent="center"
-              >
-                <Image
-                  source={Icones.tree}
-                  resizeMode={"stretch"}
-                  width={90}
-                  height={90}
-                  tintColor={colors.white}
-                  alignSelf='center'
-                />
-                <Text
-                  color={colors.white}
-                  textAlign='center'
-                  fontSize="md" onPress={() => navigation.navigate('ProductivityTree')} >{locale.Management.ARVORE_PRODUTIVIDADE}</Text>
-              </Box>
+                borderRadius={15}
+                allignItems="center" >
+                <Box
+
+                >
+                  <Image
+                    source={Icones.tree}
+                    resizeMode={"stretch"}
+                    width={90}
+                    height={90}
+                    tintColor={colors.white}
+                    alignSelf='center'
+                  />
+                  <Text
+                    color={colors.white}
+                    textAlign='center'
+                    fontWeight={800}
+                    fontSize="md" onPress={() => navigation.navigate('ProductivityTree')} >{locale.Management.ARVORE_PRODUTIVIDADE}</Text>
+                </Box>
+              </LinearGradient>
+
             </Box>
-            <Box button
 
+            <Box button
               width="90%"
               height="25%"
               flexDirection="row"
@@ -149,53 +140,57 @@ export default function Management({ navigation }) {
               justifyContent="space-between"
               margin={5}
             >
-
-              <Box
-                bg={colors.colorOrange}
+              <LinearGradient colors={[colors.colorRedGradient, colors.colorOrangeGradient]}
                 borderRadius={15}
                 width="45%"
-                allignItems="center"
                 justifyContent="center"
-              >
-                <Image
-                  source={Icones.clipboard}
-                  resizeMode={"stretch"}
-                  width={65}
-                  height={90}
-                  tintColor={colors.white}
-                  alignSelf='center'
-                />
+                borderRadius={15}
+                allignItems="center" >
+                <Box
 
-                <Text
-                  color={colors.white}
-                  textAlign='center'
-                  fontSize="md" onPress={() => navigation.navigate('Orders')} >{locale.Management.PEDIDOS}</Text>
-              </Box>
-              <Box
-                bg={colors.colorOrange}
+                >
+                  <Image
+                    source={Icones.clipboard}
+                    resizeMode={"stretch"}
+                    width={65}
+                    height={90}
+                    tintColor={colors.white}
+                    alignSelf='center'
+                  />
+
+                  <Text
+                    color={colors.white}
+                    textAlign='center'
+                    fontWeight={800}
+                    fontSize="md" onPress={() => navigation.navigate('Orders')} >{locale.Management.PEDIDOS}</Text>
+                </Box></LinearGradient>
+              <LinearGradient colors={[colors.colorRedGradient, colors.colorOrangeGradient]}
                 borderRadius={15}
                 width="45%"
-                allignItems="center"
                 justifyContent="center"
-              >
+                borderRadius={15}
+                allignItems="center" >
+                <Box
 
-                <Image
-                  source={Icones.stock}
-                  resizeMode={"stretch"}
-                  width={90}
-                  height={90}
-                  tintColor={colors.white}
-                  alignSelf='center'
-                />
+                >
 
-                <Text
-                  alignContent="center"
-                  textAlign='center'
-                  color={colors.white}
-                  fontSize="md" onPress={() => navigation.navigate('Stock')} >{locale.Management.ESTOQUE}</Text>
+                  <Image
+                    source={Icones.stock}
+                    resizeMode={"stretch"}
+                    width={90}
+                    height={90}
+                    tintColor={colors.white}
+                    alignSelf='center'
+                  />
+                  <Text
+                    alignContent="center"
+                    textAlign='center'
+                    color={colors.white}
+                    fontWeight={800}
+                    fontSize="md" onPress={() => navigation.navigate('Stock')} >{locale.Management.ESTOQUE}</Text>
 
 
-              </Box>
+                </Box></LinearGradient>
 
             </Box>
 
