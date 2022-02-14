@@ -15,11 +15,10 @@ import {
 import { colors } from '../../assets/css/styles';
 import { Icones } from '../../assets/icons/index';
 import React from 'react';
-
-
+import LinearGradient from 'react-native-linear-gradient';
 import * as locale from '../../locale.json';
 import { TouchableOpacity } from 'react-native';
-import { LinearGradient } from 'react-native-svg';
+
 
 export default function Management({ navigation }) {
   return (
@@ -34,7 +33,16 @@ export default function Management({ navigation }) {
           <Box>
             <Center flex={0}></Center>
 
-           
+            <LinearGradient colors={[colors.colorRedGradient, colors.colorOrangeGradient]} 
+             allignItems="center"
+             alignSelf="center"
+             justifyContent="space-around"
+             borderRadius="30%"
+             width="90%"
+             height="25%"
+             margin={20}
+            >
+        
             <Box button
 
               width="90%"
@@ -44,8 +52,8 @@ export default function Management({ navigation }) {
               allignItems="center"
               alignSelf="center"
               justifyContent="space-around"
-              bg={colors.colorOrange}
-              borderRadius={25}  >
+              
+                >
 
               <Image
                 source={Icones.grafico}
@@ -58,14 +66,12 @@ export default function Management({ navigation }) {
 
               <Text
                 alignSelf="center"
-
                 color={colors.white}
                 textAlign='center'
-                
                 fontSize="md" onPress={() => navigation.navigate('SalesDetail')} >{locale.Management.INFORMACOES}</Text>
 
             </Box>
-            
+            </LinearGradient>
             <Box
 
               width="90%"

@@ -12,5 +12,8 @@ export const colors = {
     greenLight:'#00FF00',
     blueStrong:'#2B339D',
     blue:'#3B5CB8',
-    colorOrange:'#FA8111'
+    colorOrange:'#FA8111',
+    colorRedGradient:"#BC3908",
+    colorOrangeGradient: "#F6AA1C"
+    
 }
