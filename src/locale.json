@@ -94,7 +94,8 @@
             "FATURAMENTO":"Faturamento",
             "BASE_ESTOQUE":"Base estoque",
             "SUGERIDO":"Sugerido",
-            "RESUMO":"Resumo"
+            "RESUMO":"Resumo",
+            "PRODUTO":"Produto"
        
         },
         "Input": {
@@ -117,6 +118,7 @@
         "CANCELAR": "Cancelar",
         "SALVAR": "Salvar",
         "CONTINUAR": "Continuar",
-        "INSERIR_PRODUTO":"Inserir Produto"
+        "INSERIR_PRODUTO":"Inserir Produto",
+        "ADICIONAR_PRODUTO":"Adicionar Produto"
     }
 }
