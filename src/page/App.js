@@ -25,6 +25,7 @@ import OrderHistory from './WalletClient/InfoClients/OrderHIstory/index';
 import Mark from './WalletClient/InfoClients/Mark/index';
 import InsertProduct from './WalletClient/AddNewOrder/InsertProduct/index';
 import Mission from './WalletClient/InfoClients/Mission/index'
+import CertificateMedical from './CertificateMedical/index';
 
 import CardComponent from '../components/CardComponent';
 import Resume from '../components/Resume';
@@ -273,6 +274,20 @@ class Kobber extends Component {
             component={Mission}
             options={{
               title: 'Clientes',
+
+              headerBackTitleVisible: false,
+              headerStyle: {
+                backgroundColor: colors.colorRed,
+              },
+              headerTintColor: colors.white,
+              headerShadowVisible: false
+            }}
+          />
+          <Stack.Screen
+            name="CertificateMedical"
+            component={CertificateMedical}
+            options={{
+              title: 'Atestado',
 
               headerBackTitleVisible: false,
               headerStyle: {
