@@ -9,9 +9,9 @@ import * as locale from '../../locale.json';
 import { Image, TouchableOpacity } from 'react-native';
 import { Icones } from '../../assets/icons/index';
 
- class OnBoarding extends Component  {
+class OnBoarding extends Component {
 
-    render(){
+    render() {
         return (
             <NativeBaseProvider>
                 <Box alignSelf='flex-start'>
@@ -34,7 +34,7 @@ import { Icones } from '../../assets/icons/index';
                                     name='menu'
                                     size={20}
                                     style={{ color: colors.colorRed }}
-    
+
                                 />
                                 }
                             />
@@ -77,6 +77,7 @@ import { Icones } from '../../assets/icons/index';
                     <Center flex={.76}></Center>
                     <Box alignSelf='flex-start'>
                         <IconButton
+                            onPress={() => this.props.navigation.navigate('WorkStatus')}
                             size="lg"
                             variant="solid"
                             backgroundColor={colors.colorRed}
@@ -98,7 +99,7 @@ import { Icones } from '../../assets/icons/index';
                         />
                     </Box>
                     <Center flex={.1}></Center>
-    
+
                 </Box>
                 <Box
                     backgroundColor={colors.colorRed}
@@ -118,9 +119,9 @@ import { Icones } from '../../assets/icons/index';
                             height={15}
                         />
                     </TouchableOpacity>
-                    <TouchableOpacity 
-                    style={{ padding: 5 }}
-                    onPress={() => this.props.navigation.navigate('WalletClient')}>
+                    <TouchableOpacity
+                        style={{ padding: 5 }}
+                        onPress={() => this.props.navigation.navigate('WalletClient')}>
                         <Wallet
                             name='wallet'
                             size={40}
@@ -137,10 +138,10 @@ import { Icones } from '../../assets/icons/index';
                             height={15}
                         />
                     </TouchableOpacity>
-                    <TouchableOpacity 
-                    onPress={() => this.props.navigation.navigate("CertificateMedical")}
-                    style={{ padding: 5 }}
-                   >
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate("CertificateMedical")}
+                        style={{ padding: 5 }}
+                    >
                         <Speedometer
                             name='text-box-multiple-outline'
                             size={40}

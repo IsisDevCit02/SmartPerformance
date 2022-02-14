@@ -115,7 +115,8 @@
             "INSERIR_ATESTADO": "Inserir Atestado",
             "INICIO_ATESTADO":"Início Atestado",
             "FIM_ATESTADO":"Fim do Atestado",
-            "FOTO_ATESTADO":"Foto do atestado"
+            "CID_MEDICO":"Cid do médico"
+
         },
         "Input":{
             "CID_MEDICO":"Digite o CID do médico"

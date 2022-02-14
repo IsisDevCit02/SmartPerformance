@@ -192,7 +192,7 @@ class CertificateMedical extends Component {
                                             fontWeight='500'
                                             color={colors.blueStrong}
                                         >
-                                            Início Atestado
+                                            {}
                                         </Text>
                                         <Input
                                             alignSelf='center'

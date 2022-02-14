@@ -47,7 +47,7 @@ class InfoLogin extends Component {
   render() {
     return (
       <NativeBaseProvider>
-        <Box flex={1} alignItems="center" justifyContent="center" bg={colors.coberColor}>
+        <Box flex={1} alignItems="center" justifyContent="center" bg={colors.colorRed}>
           <Image
             source={Images.logoKobber}
             style={{
@@ -131,7 +131,7 @@ class InfoLogin extends Component {
               </View>
               <View style={{ paddingBottom: '10%' }}>
                 <Button
-                  backgroundColor={colors.colorRed}
+                  backgroundColor={colors.coberColor}
                   borderRadius={15}
                   height={50}
                   width='85%'

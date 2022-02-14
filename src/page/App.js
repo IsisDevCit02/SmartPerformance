@@ -15,7 +15,6 @@ import Success from './Login/ForgotPassword/Success/index';
 import Perfil from './Profile/index';
 import EditProfile from './Profile/EditProfile/index';
 import OnBoarding from './OnBoarding/index';
-import WorkStatus from './WorkStatus/index';
 import WalletClient from './WalletClient/index';
 import InfoClients from './WalletClient/InfoClients';
 import AddNewOrder from './WalletClient/AddNewOrder/index'
@@ -25,7 +24,7 @@ import OrderHistory from './WalletClient/InfoClients/OrderHIstory/index';
 import Mark from './WalletClient/InfoClients/Mark/index';
 import InsertProduct from './WalletClient/AddNewOrder/InsertProduct/index';
 import Mission from './WalletClient/InfoClients/Mission/index'
-import CertificateMedical from './CertificateMedical/index';
+import WorkStatus from './WorkStatus/index';
 
 import CardComponent from '../components/CardComponent';
 import Resume from '../components/Resume';
@@ -37,7 +36,7 @@ const Stack = createNativeStackNavigator()
 class Kobber extends Component {
   render() {
     return (
-      <NavigationContainer style={styles.contentTop}  ref={navigationRef}>
+      <NavigationContainer style={styles.contentTop} ref={navigationRef}>
         <Stack.Navigator>
           <Stack.Screen name='Login'
             component={Login}
@@ -52,7 +51,7 @@ class Kobber extends Component {
               title: null,
               headerBackTitleVisible: false,
               headerStyle: {
-                backgroundColor: colors.coberColor,
+                backgroundColor: colors.colorRed,
               },
               headerTintColor: colors.white,
               headerShadowVisible: false
@@ -65,7 +64,7 @@ class Kobber extends Component {
               title: null,
               headerBackTitleVisible: false,
               headerStyle: {
-                backgroundColor: colors.coberColor,
+                backgroundColor: colors.colorRed,
               },
               headerTintColor: colors.white,
               headerShadowVisible: false
@@ -78,7 +77,7 @@ class Kobber extends Component {
               title: null,
               headerBackTitleVisible: false,
               headerStyle: {
-                backgroundColor: colors.coberColor,
+                backgroundColor: colors.colorRed,
               },
               headerTintColor: colors.white,
               headerShadowVisible: false
@@ -91,7 +90,7 @@ class Kobber extends Component {
               title: null,
               headerBackTitleVisible: false,
               headerStyle: {
-                backgroundColor: colors.coberColor,
+                backgroundColor: colors.colorRed,
               },
               headerTintColor: colors.white,
               headerShadowVisible: false
@@ -104,7 +103,7 @@ class Kobber extends Component {
               title: null,
               headerBackTitleVisible: false,
               headerStyle: {
-                backgroundColor: colors.coberColor,
+                backgroundColor: colors.colorRed,
               },
               headerTintColor: colors.white,
               headerShadowVisible: false
@@ -141,20 +140,6 @@ class Kobber extends Component {
             component={OnBoarding}
             options={{
               headerShown: false,
-            }}
-          />
-          <Stack.Screen
-            name="WorkStatus"
-            component={WorkStatus}
-            options={{
-              title: 'Status de trabalho',
-
-              headerBackTitleVisible: false,
-              headerStyle: {
-                backgroundColor: colors.colorRed,
-              },
-              headerTintColor: colors.white,
-              headerShadowVisible: false
             }}
           />
           <Stack.Screen
@@ -284,10 +269,10 @@ class Kobber extends Component {
             }}
           />
           <Stack.Screen
-            name="CertificateMedical"
-            component={CertificateMedical}
+            name="WorkStatus"
+            component={WorkStatus}
             options={{
-              title: 'Atestado',
+              title: 'Status do Trabalho',
 
               headerBackTitleVisible: false,
               headerStyle: {

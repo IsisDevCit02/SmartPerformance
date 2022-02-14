@@ -21,7 +21,7 @@ class Login extends Component{
   render(){
     return (
       <NativeBaseProvider >
-        <Box flex={1} alignItems="center" justifyContent="center" bg={colors.coberColor}>
+        <Box flex={1} alignItems="center" justifyContent="center" bg={colors.colorRed}>
           <Image
             source={Images.logoKobber}
             alt="Alternate Text"
@@ -40,7 +40,7 @@ class Login extends Component{
             borderRightRadius={20}
           >
             <Button
-              bg={colors.colorRed}
+              bg={colors.coberColor}
               width="85%"
               height={50}
               borderRadius={15}

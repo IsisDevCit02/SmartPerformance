@@ -24,7 +24,7 @@ class ForgotPassword extends Component {
     render(){
         return (
             <NativeBaseProvider >
-                <Box flex={1} alignItems="center" justifyContent="center" bg={colors.coberColor}>
+                <Box flex={1} alignItems="center" justifyContent="center" bg={colors.colorRed}>
                     <Image
                         source={Images.logoKobber}
                         alt="Alternate Text"
@@ -63,7 +63,7 @@ class ForgotPassword extends Component {
                             </FormControl>
                             <View top={10}>
                                 <Button
-                                    backgroundColor={colors.colorRed}
+                                    backgroundColor={colors.coberColor}
                                     borderRadius={15}
                                     height={50}
                                     width='85%'
