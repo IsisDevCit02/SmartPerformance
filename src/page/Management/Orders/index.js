@@ -15,6 +15,16 @@ import {
   import React from 'react';
 
 
+  state = {
+    slogan: 'chegou aqui otário'
+  }
+
+  alternar = () => {
+
+    this.setState({
+      slogan : this.state.slogan ? '' : 'chegou aqui otário'
+    })
+  }
   export default function Orders({ navigation }) {
     return (
       <NativeBaseProvider>
@@ -25,7 +35,24 @@ import {
             width='100%'
             borderTopLeftRadius={25}
             borderTopRightRadius={25} >
-                <Text>Orders</Text>
+                <View
+            width="30%"
+            height="10%"
+            bg={colors.colorRed}
+            margin={3}
+            borderRadius={10}
+            alignSelf="flex-end"
+            flexDirection="row"
+            justifyContent="center"
+          >
+            <Text
+              alignSelf="center"
+              color={colors.white}
+              textAlign='center'
+              fontWeight={800}
+              fontSize="md">Visão geral</Text>
+          </View>
+
             
           </Box>
         </Box>
