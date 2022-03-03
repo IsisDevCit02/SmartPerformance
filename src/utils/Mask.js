@@ -53,3 +53,51 @@ export const hourConvert = (hour) => {
     return hourConvert[0];
 
 }
+export const applyMoneyBRL = (value) => {
+    return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+}
+export const applyMoneyInput = (value) => {
+    let priceMask = new StringMask('#,##0.00', { reverse: true })
+
+    if (value) {
+        if (typeof value === 'number') {
+            value = value.toString()
+        }
+        value = value.replace(/\D/g, '')
+        value = parseFloat(value)
+
+        if (value.length > 5) {
+            priceMask = new StringMask('##0,00', { reverse: true })
+        } else {
+            priceMask = new StringMask('#.##0,00', { reverse: true })
+        }
+
+        return priceMask.apply(value)
+    }
+    return value
+}
+export const numberCelphone = (value) => {
+    let celphone = new StringMask('(##) ####-####')
+
+    if (value) {
+        value = value.replace(/\D/g, '')
+        return celphone.apply(value)
+    }
+    return value
+}
+
+export const applyCepMask = (value) => {
+    let max = 8
+    let cnpjMask = new StringMask('##.###-###')
+
+    if (value) {
+        value = value.replace(/\D/g, '')
+
+        if (value && value.length > max) {
+            value = value.substr(0, max)
+        }
+
+        return cnpjMask.apply(value)
+    }
+    return value
+}
